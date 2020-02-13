@@ -3,11 +3,16 @@ import './App.css';
 import Header from './components/Header';
 import ProfileContainer from './components/ProfileContainer';
 import Careers from './components/Careers';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <ProfileContainer/>
+    <Switch>
+      <Route exact path='/' component={ProfileContainer}/>
+      <Route exact path='/aboutus' component={ProfileContainer}/>
+      <Route exact path='/careers' component={Careers}/>
+    </Switch>
     </div>
   );
 }

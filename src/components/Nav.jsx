@@ -12,9 +12,13 @@ function Nav() {
     color: 'white',
     paddingLeft: '8px'
   }
+  const heroText = {
+    fontWeight: 'bold',
+    fontSize: '16px'
+  }
   return (
     <div style={navStyle}>
-      <p>Super Awesome Company</p>
+      <p style={heroText}>Super Awesome Company</p>
       <div>
       <Link style={linkStyle} to='/aboutus'>About Us</Link>
       <Link style={linkStyle} to='/careers'>Careers</Link>
